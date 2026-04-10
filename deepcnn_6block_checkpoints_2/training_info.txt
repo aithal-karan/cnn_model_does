@@ -1,0 +1,7 @@
+Model: DeepCNN6Block
+Input size: 64x64
+Num classes: 9
+Total parameters: 1,638,665
+Best epoch: 2
+Best val accuracy: 62.65%
+Test accuracy: 62.65%

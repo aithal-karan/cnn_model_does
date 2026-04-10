@@ -1,0 +1,8 @@
+INT8 Quantization Summary
+========================================
+FP32 Model Size: 6.27 MB
+INT8 Model Size: 1.60 MB
+Compression Ratio: 3.92x
+FP32 Accuracy: 65.88%
+INT8 Accuracy: 65.78%
+Accuracy Drop: 0.10%
