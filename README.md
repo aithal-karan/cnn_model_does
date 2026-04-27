@@ -155,9 +155,21 @@ val_transform = transforms.Compose([
 ])
 ```
 
+## Alternative Models (Backup Options)
+
+All options below are smaller than VGG16 (138M params / 528 MB):
+
+| Model | Parameters | Size | Notes |
+|-------|------------|------|-------|
+| **ResNet-50** | 25.6M | ~98 MB | Current choice, best accuracy |
+| ResNet-34 | 21.8M | ~85 MB | Lighter, basic blocks |
+| ResNet-18 | 11.7M | ~45 MB | Smallest ResNet |
+| MobileNetV2 | 3.4M | ~14 MB | Edge device optimized |
+| EfficientNet-B0 | 5.3M | ~21 MB | Best accuracy/size ratio |
+
 ## Notes
 
-- Model designed for Spinnaker deployment (no skip connections)
+- ResNet-50 uses skip connections (now compatible with deployment)
 - INT8 quantization uses PyTorch's fbgemm backend (x86)
 - For ARM deployment, change to 'qnnpack' backend
 - Early stopping monitors validation accuracy

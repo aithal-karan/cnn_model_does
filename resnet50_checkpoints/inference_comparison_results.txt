@@ -1,0 +1,52 @@
+ResNet-50 Model Inference Comparison
+==================================================
+
+MODEL COMPARISON
+--------------------------------------------------
+FP32 Model Size: 90.05 MB
+INT8 Model Size: 22.56 MB
+Compression Ratio: 3.99x
+
+FP32 Accuracy: 73.28%
+INT8 Accuracy: 25.64%
+Accuracy Difference: -47.65%
+
+FP32 Throughput: 3150.9 samples/s
+INT8 Throughput: 130.4 samples/s
+
+FP32 CLASSIFICATION REPORT
+--------------------------------------------------
+              precision    recall  f1-score   support
+
+  BACKGROUND     0.1587    1.0000    0.2740        10
+          E1     0.8151    0.5903    0.6847      1628
+          E2     0.7550    0.5903    0.6626       642
+          E3     0.6207    0.8456    0.7159      1833
+         E40     1.0000    0.4691    0.6386       680
+         E5H     0.8162    0.5635    0.6667       717
+          E6     0.9794    0.8896    0.9324      1069
+          E8     0.5558    0.9288    0.6955       927
+        EHRB     0.9382    0.8362    0.8843       635
+
+    accuracy                         0.7328      8141
+   macro avg     0.7377    0.7459    0.6838      8141
+weighted avg     0.7830    0.7328    0.7334      8141
+
+
+INT8 CLASSIFICATION REPORT
+--------------------------------------------------
+              precision    recall  f1-score   support
+
+  BACKGROUND     0.0000    0.0000    0.0000        10
+          E1     0.0506    0.0049    0.0090      1628
+          E2     0.1144    0.0607    0.0793       642
+          E3     0.2456    0.9307    0.3887      1833
+         E40     0.0000    0.0000    0.0000       680
+         E5H     0.0000    0.0000    0.0000       717
+          E6     0.5714    0.0037    0.0074      1069
+          E8     0.4469    0.3085    0.3650       927
+        EHRB     0.9362    0.0693    0.1290       635
+
+    accuracy                         0.2564      8141
+   macro avg     0.2628    0.1531    0.1087      8141
+weighted avg     0.2734    0.2564    0.1482      8141

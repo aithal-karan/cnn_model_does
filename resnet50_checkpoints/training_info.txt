@@ -1,0 +1,7 @@
+Model: ResNet-50 (Pretrained ImageNet)
+Input size: 64x64
+Num classes: 9
+Total parameters: 23,526,473
+Best epoch: 8
+Best val accuracy: 73.28%
+Test accuracy: 73.28%

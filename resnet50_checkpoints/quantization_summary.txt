@@ -1,0 +1,8 @@
+ResNet-50 INT8 Quantization Summary (FX Graph Mode)
+========================================
+FP32 Model Size: 90.05 MB
+INT8 Model Size: 22.56 MB
+Compression Ratio: 3.99x
+FP32 Accuracy: 73.31%
+INT8 Accuracy: 25.64%
+Accuracy Drop: 47.67%
